@@ -16,18 +16,15 @@
     function updateBlurredContent(slideIndex) {
 
       const currentSlide = $('.carousel-item.active').find('img').attr('src');
-      console.log(currentSlide);
 
       let nextSlideIndex = slideIndex + 1;
       if (nextSlideIndex >= $('.carousel-item').length) {
         nextSlideIndex = 0; 
       }
       const nextSlideImage = $('.carousel-item').eq(nextSlideIndex).find('img').attr('src');
-      console.log('H5',$('.carousel-item').eq(nextSlideIndex).find('h5').text());
-      console.log('P',$('.carousel-item').eq(nextSlideIndex).find('p').text());
       $('#nextImg').attr('src',nextSlideImage);
       $('#slideHeading').text($('.carousel-item').eq(nextSlideIndex).find('h5').text());
-      $('#slideContent').text($('.carousel-item').eq(nextSlideIndex).find('h5').text());
+      $('#slideContent').text($('.carousel-item').eq(nextSlideIndex).find('p').text());
       $('.col-3 .card-img-top').attr('src', currentSlide);
     }
     </script>
@@ -80,34 +77,39 @@
     font-size: 19px;
     font-family: 'Inter', sans-serif;
   }
-  carousel-img {
-  width: 100%;
-  height: 250px; /* Adjust height as needed */
-  object-fit: cover;
-}
-.carousel-caption {
-  color: #fff;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
-}
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.5);
-  border: none;
-}
-.carousel-control-prev-icon:hover,
-.carousel-control-next-icon:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-.carousel-indicators li {
-  background-color: #ddd;
+ .carousel-indicators li {
+  background-color: #410000;
   opacity: 0.5;
 }
 .carousel-indicators .active {
-  background-color: #87121C; /* Adjust active indicator color */
+  background-color: #87121C;
+} 
+ .carousel-item .card-body{
+  background-color: #FFE5E7;
+  flex: 1;
+ }
+ .inactive-carousal {
+  background-color: #FFE5E7;
+  opacity: 0.5;
+ }
+ .carousel-indicators [data-bs-target]:not(.active) {
+  background-color: #FFC2C7;
 }
+.arrow-button {
+  cursor: pointer; 
+}
+
+.icon-arrow {
+  font-weight: bold; 
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #87121C;
+}
+ 
   </style>
 </head>
 <body>
+  <!--  Nav bar -->
   <nav class="navbar navbar-expand-lg navbar-color">
     <div class="container">
       <a class="navbar-brand" href="#">
@@ -141,7 +143,7 @@
     <img src="assets/icons/home_img.png" alt="Large Screen Image" class="img-fluid d-none d-lg-block">
     <img src="assets/icons/home_img.png" alt="Medium Screen Image" class="img-fluid d-none d-md-block d-lg-none">
     <img src="assets/icons/Hero-bg-MS.png" alt="Small Screen Image" class="img-fluid d-md-none">
-    <!-- <div class="container col-md-2"> -->
+
     <!-- Small screen View -->
     <div class="card-img-overlay px-3 py-3 m-3 pt-5 d-block d-sm-none">
       <h5 class="card-title text-body2 pb-2" style="color: #FFFCFC">Empowering Rural India via Tailored Supply Chain Solutions</h5>
@@ -210,65 +212,89 @@
   </div>
 
   <!-- Why choose us -->
-  <!-- Add this code after the card-img-overlay section -->
-
-  <div class="container-fluid">
+  <div class="container-fluid p-5" style="background-color: #F6E5CC;">
     <div class="row">
-      <div class="col-2 d-flex flex-column align-items-center justify-content-center">
-        <h2 class="text-body1">Why Choose Us</h2>
-        <img src="assets/images/whyUs/LS-underline-primary.png" alt="Why Choose Us Image" style="width: 100px; height: auto;">
+      <div class="col-12 col-md-12 col-lg-3 d-flex flex-column justify-content-top p-5">
+        <h2 class="text-body1 justify-content-start p-0" style="font-size: 32px;">Why Choose Us</h2>
+        <img src="assets/images/whyUs/LS-underline-primary.png" alt="Why Choose Us Image" style="width: 100%; height: auto;">
       </div>
-      <div class="col-5">
-        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="card h-100 w-75 mx-auto"> <img src="assets/images/carousal/MaskGroup-0.png" class="card-img-top carousel-img d-block w-100" alt="Slide 1">
-                <div class="card-body">
-                  <h5 class="card-title">Slide 1 Title</h5>
-                  <p class="card-text">Slide 1 description.</p>
+      <div class="col-12 col-md-12 col-lg-4">
+        <div class="row">
+          <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card mx-auto rounded" style="height: 500px;"> 
+                  <img src="assets/images/carousal/MaskGroup-0.png" class="card-img-top carousel-img d-block w-100" alt="Slide 1">
+                  <div class="card-body justify-content-center p-4 text-center" style="overflow: auto;">
+                    <h5 class="card-title">Direct To Door</h5>
+                    <p class="card-text">We cover your end to end logistics, Picking up to delivery both at the door step</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card h-100 w-75 mx-auto"> <img src="assets/images/carousal/MaskGroup-1.png" class="card-img-top carousel-img d-block w-100" alt="Slide 2">
-                <div class="card-body">
-                  <h5 class="card-title">Slide 2 Title</h5>
-                  <p class="card-text">Slide 2 description.</p>
+              <div class="carousel-item">
+                <div class="card mx-auto rounded" style="height: 500px;">  
+                  <img src="assets/images/carousal/MaskGroup-1.png" class="card-img-top carousel-img d-block w-100" alt="Slide 2">
+                  <div class="card-body justify-content-center p-4 text-center" style="overflow: auto;">
+                    <h5 class="card-title">Exceed Customers Expectations</h5>
+                    <p class="card-text">India’s first customised Logistics service provider</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card h-100 w-75 mx-auto"> <img src="assets/images/carousal/MaskGroup-2.png" class="card-img-top carousel-img d-block w-100" alt="Slide 2">
-                <div class="card-body">
-                  <h5 class="card-title">Slide 3 Title</h5>
-                  <p class="card-text">Slide 2 description.</p>
+              <div class="carousel-item">
+                <div class="card mx-auto rounded" style="height: 500px;"> 
+                  <img src="assets/images/carousal/MaskGroup-2.png" class="card-img-top carousel-img d-block w-100" alt="Slide 2">
+                  <div class="card-body justify-content-center p-4 text-center" style="overflow: auto;">
+                    <h5 class="card-title">E2E tracking and update</h5>
+                    <p class="card-text">We have end to end tracking of each and every shipments and share immediate updates with POD</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card h-100 w-75 mx-auto"> <img src="assets/images/carousal/MaskGroup-3.png" class="card-img-top carousel-img d-block w-100" alt="Slide 2">
-                <div class="card-body">
-                  <h5 class="card-title">Slide 4 Title</h5>
-                  <p class="card-text">Slide 2 description.</p>
+              <div class="carousel-item">
+                <div class="card mx-auto rounded" style="height: 500px;"> 
+                  <img src="assets/images/carousal/MaskGroup-3.png" class="card-img-top carousel-img d-block w-100" alt="Slide 2">
+                  <div class="card-body justify-content-center p-4 text-center" style="overflow: auto;">
+                    <h5 class="card-title">24*7 Customer Service</h5>
+                    <p class="card-text">We are available 24*7 for the assitance and support</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="carousel-indicators">
+        </div>
+        <div class="row mt-3">
+          <div class="col">
+          <div class="carousel-indicators mt-9 d-flex align-items-center" style="position: relative;">
+            <span id="carouselPrevLarge" class="icon-arrow fas fa-angle-left" style="margin-right: 40px;"></span>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            </div>
+            <span  id="carouselNextLarge" class="icon-arrow fas fa-angle-right" style="margin-left: 40px;"></span>
+            
+          </div>
+        </div>
         </div>
       </div>
-      <div class="col-5">
-        <div class="card h-50 w-75 mx-auto"> 
-          <img id ='nextImg' src="assets/images/carousal/MaskGroup-0.png" class="card-img-top carousel-img d-block w-100" alt="Slide 1">
-          <div class="card-body">
-            <h5 id='slideHeading' class="card-title">Slide 1 Title</h5>
-            <p id = 'slideContent' class="card-text">Slide 1 description.</p>
+      <div class="col-5 d-none d-md-none d-lg-block">
+        <div class="row">
+        <div class="card h-60 w-50 mx-auto rounded inactive-carousal mt-5" style="height: 400px;"> 
+          <img id ='nextImg' src="assets/images/carousal/MaskGroup-0.png" class="card-img-top carousel-img d-block w-100">
+          <div class="card-body justify-content-center p-4 text-center" style="overflow: auto;">
+            <h5 id='slideHeading' class="card-title"></h5>
+            <p id = 'slideContent' class="card-text" style="font-size: 14px;"></p>
           </div>
+        </div>
+        </div>
+        <!-- <div class="row mt-3">
+          <div class="col justify-content-center">
+            
+              <span id="carouselPrevLarge" class="icon-arrow">&lt;</span>
+            
+            
+              <span  id="carouselNextLarge" class="icon-arrow">&gt;</span>
+              
+            
+        </div> -->
         </div>
       </div>
     </div>
@@ -283,16 +309,35 @@
   </div>
   <script>
     $(document).ready(function() {
+      updateBlurredContent(0);
       $('#carouselExampleCaptions').on('slide.bs.carousel', function (event) {
         
-        const nextSlide = $(event.relatedTarget); // Get the next slide element
-        console.log(nextSlide)
-        const slideIndex = nextSlide.index(); // Get the index of the next slide
-        console.log(slideIndex)
+        const nextSlide = $(event.relatedTarget);
+        const slideIndex = nextSlide.index();
+        $('.carousel-indicators button').removeClass('active');
+        $('.carousel-indicators button[data-bs-slide-to="' + slideIndex + '"]').addClass('active');
         updateBlurredContent(slideIndex);
-        console.log('clicked current',slideIndex-1)
-        console.log('clicked next',slideIndex)
       });
+      $(document).on('click', '#carouselNext, #carouselNextLarge', function() {
+            $('#carouselExampleCaptions').carousel('next');
+      });
+
+      $(document).on('click', '#carouselPrev, #carouselPrevLarge', function() {
+            $('#carouselExampleCaptions').carousel('prev');
+      });
+
+
+      // $('#carouselPrev').click(function() {
+      //   console.log('on click is called')
+      //   $('#carouselExampleCaptions').carousel('prev');
+      //   console.log('done changing')
+      // });
+      // $('#carouselNext').click(function() {
+      //   console.log('on click is called')
+      //   $('#carouselExampleCaptions').carousel('next');
+      //   console.log('done changing')
+      // });
+
     });
     </script>
 </body>
