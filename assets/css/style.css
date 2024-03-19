@@ -1,0 +1,37 @@
+header {
+    background-color: #FFF5E2;
+  }
+  .navbar-color {
+    background-color: #FFF5E2;
+  }
+
+  .logo {
+    width: 236px; /* Adjust width as needed */
+    height: 110px; /* Adjust height as needed */
+    margin-left: 24px;
+  }
+  .text-body1 {
+    color: #410000;
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500
+  }
+  .text-body2{
+    color: #FFFCFC;
+    font-size: 24px;
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+  }
+  .nav-item {
+    margin-right: 30px; /* Adjust spacing as needed */
+  }
+  .navbar-toggler-icon {
+    color: #87121C;
+  }
+  .card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .lh-2 {
+    line-height: 2;
+  }
