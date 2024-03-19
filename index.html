@@ -104,8 +104,35 @@
   font-size: 2.5rem;
   cursor: pointer;
   color: #87121C;
+} 
+.image-hover-container {
+  position: relative; /* Enables positioning of hover text */
 }
- 
+
+.image-hover-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 1); Semi-transparent black background */
+  background-color: #87121CFF;
+  color: #FFEECC; /* White text color */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition on hover */
+  display: flex; /* Center text vertically and horizontally */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack text vertically */
+  padding: 10px; /* Inner padding for text */
+  font-size: 32px;
+}
+
+.image-hover-container:hover .image-hover-text {
+  opacity: 1; /* Text becomes visible on hover */
+}
+
+
   </style>
 </head>
 <body>
@@ -215,7 +242,7 @@
   <div class="container-fluid p-5" style="background-color: #F6E5CC;">
     <div class="row">
       <div class="col-12 col-md-12 col-lg-3 d-flex flex-column justify-content-top p-5">
-        <h2 class="text-body1 justify-content-start p-0" style="font-size: 32px;">Why Choose Us</h2>
+        <h2 class="text-body1 justify-content-start p-0" style="font-size: 46px;">Why Choose Us</h2>
         <img src="assets/images/whyUs/LS-underline-primary.png" alt="Why Choose Us Image" style="width: 100%; height: auto;">
       </div>
       <div class="col-12 col-md-12 col-lg-4">
@@ -285,28 +312,44 @@
           </div>
         </div>
         </div>
-        <!-- <div class="row mt-3">
-          <div class="col justify-content-center">
-            
-              <span id="carouselPrevLarge" class="icon-arrow">&lt;</span>
-            
-            
-              <span  id="carouselNextLarge" class="icon-arrow">&gt;</span>
-              
-            
-        </div> -->
         </div>
       </div>
     </div>
   </div>
 
 <!-- Add Bootstrap JavaScript at the end of your HTML body -->
-
-
-  <div class="container-fluid">
-
-    here is the next section
+<div class="container-fluid p-5">
+  <div class="col-12 col-md-12">
+      <h2 class="text-body1 justify-content-start p-0" style="font-size: 46px;">Our Services</h2>
+      <div class="service-underline" style="background-color: #410000; width: 250px; height: 5px;"></div>  
+      <p class="mt-4 text-body1" style="font-size: 16px;font-weight: 300;">Lorem ipsum dolor sit amet consectetur. At parturient urna mattis cras pellentesque viverra accumsan convallis feugiat. Malesuada massa donec dignissim sed amet. Sed vestibulum ut elementum lorem faucibus porttitor amet aliquam felis. In pulvinar urna faucibus habitant nunc diam vitae platea gravida. </p>
+      <div class="d-flex flex-column mt-4">  
+        <div class="image-hover-container card">  
+          <img src="assets/images/ourServices/Component1.png" alt="Image 1">
+          <div class="image-hover-text p-5 text-center">
+            <p>We extend Door-to-Door (D2D) services with scheduled delivery options spanning all geographical regions, ensuring your parcels are conveniently delivered to your doorstep. Our D2D service offers a cost-effective logistics model complemented by comprehensive end-to-end tracking mechanisms, ensuring peace of mind for you.</p>
+          </div>
+        </div>
+        <div class="image-hover-container card">  
+          <img src="assets/images/ourServices/Component2.png" alt="Image 2">
+          <div class="image-hover-text p-5 text-center">
+            <p>Opt for our Full Truck Load (FTL) or dedicated vehicle services, meticulously tailored to align with your business requirements. This customizable option enhances your logistical operations by providing swift and personalized delivery services, ensuring optimal efficiency.</p>
+          </div>
+        </div>
+        <div class="image-hover-container card"> 
+          <img src="assets/images/ourServices/Component3.png" alt="Image 3">
+          <div class="image-hover-text p-5 text-center">
+            <p>Rely on our expertise in providing tailor-made warehouse solutions precisely crafted to meet your unique specifications. Our strategically located warehouses are designed to seamlessly accommodate your needs, enhancing your logistical efficiency and operational flexibility.</p>
+          </div>
+        </div>
+      </div>
   </div>
+</div>
+
+
+
+
+
   <script>
     $(document).ready(function() {
       updateBlurredContent(0);
