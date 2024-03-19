@@ -107,6 +107,9 @@
 } 
 .image-hover-container {
   position: relative; /* Enables positioning of hover text */
+  width: 100%; /* Set width to 100% to ensure responsiveness */
+  max-width: 100; 
+  height: auto; /* Allow height to adjust proportionally */
 }
 
 .image-hover-text {
@@ -125,7 +128,7 @@
   align-items: center;
   flex-direction: column; /* Stack text vertically */
   padding: 10px; /* Inner padding for text */
-  font-size: 32px;
+  font-size: 22px;
 }
 
 .image-hover-container:hover .image-hover-text {
@@ -320,29 +323,48 @@
 <!-- Add Bootstrap JavaScript at the end of your HTML body -->
 <div class="container-fluid p-5">
   <div class="col-12 col-md-12">
-      <h2 class="text-body1 justify-content-start p-0" style="font-size: 46px;">Our Services</h2>
-      <div class="service-underline" style="background-color: #410000; width: 250px; height: 5px;"></div>  
-      <p class="mt-4 text-body1" style="font-size: 16px;font-weight: 300;">Lorem ipsum dolor sit amet consectetur. At parturient urna mattis cras pellentesque viverra accumsan convallis feugiat. Malesuada massa donec dignissim sed amet. Sed vestibulum ut elementum lorem faucibus porttitor amet aliquam felis. In pulvinar urna faucibus habitant nunc diam vitae platea gravida. </p>
-      <div class="d-flex flex-column mt-4">  
-        <div class="image-hover-container card">  
-          <img src="assets/images/ourServices/Component1.png" alt="Image 1">
-          <div class="image-hover-text p-5 text-center">
-            <p>We extend Door-to-Door (D2D) services with scheduled delivery options spanning all geographical regions, ensuring your parcels are conveniently delivered to your doorstep. Our D2D service offers a cost-effective logistics model complemented by comprehensive end-to-end tracking mechanisms, ensuring peace of mind for you.</p>
-          </div>
-        </div>
-        <div class="image-hover-container card">  
-          <img src="assets/images/ourServices/Component2.png" alt="Image 2">
-          <div class="image-hover-text p-5 text-center">
-            <p>Opt for our Full Truck Load (FTL) or dedicated vehicle services, meticulously tailored to align with your business requirements. This customizable option enhances your logistical operations by providing swift and personalized delivery services, ensuring optimal efficiency.</p>
-          </div>
-        </div>
-        <div class="image-hover-container card"> 
-          <img src="assets/images/ourServices/Component3.png" alt="Image 3">
-          <div class="image-hover-text p-5 text-center">
-            <p>Rely on our expertise in providing tailor-made warehouse solutions precisely crafted to meet your unique specifications. Our strategically located warehouses are designed to seamlessly accommodate your needs, enhancing your logistical efficiency and operational flexibility.</p>
+    <h2 class="text-body1 justify-content-start p-0" style="font-size: 46px;">Our Services</h2>
+    <img src="assets/images/whyUs/LS-underline-primary.png" alt="Why Choose Us Image" style="width:300px; height: auto;">
+    <p class="mt-4 text-body1" style="font-size: 16px;font-weight: 400;">Lorem ipsum dolor sit amet consectetur. At parturient urna mattis cras pellentesque viverra accumsan convallis feugiat. Malesuada massa donec dignissim sed amet. Sed vestibulum ut elementum lorem faucibus porttitor amet aliquam felis. In pulvinar urna faucibus habitant nunc diam vitae platea gravida. </p>
+
+    <div class="row justify-content-center p-3 p-md-5 p-lg-5">  
+      <div class="col-12 col-md-12 mb-4"> <!-- Adjust the column size based on your design -->
+        <div class="row">
+          <div class="col-12"> <!-- Column containing the card -->
+            <div class="image-hover-container card">  
+              <img src="assets/images/ourServices/Component1.png" alt="Image 2" class="img-fluid">
+              <div class="image-hover-text p-5 text-center rounded">
+                <p>We extend Door-to-Door (D2D) services with scheduled delivery options spanning all geographical regions, ensuring your parcels are conveniently delivered to your doorstep. Our D2D service offers a cost-effective logistics model complemented by comprehensive end-to-end tracking mechanisms, ensuring peace of mind for you.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <div class="col-12 col-md-12 mb-4"> <!-- Adjust the column size based on your design -->
+        <div class="row">
+          <div class="col-12"> <!-- Column containing the card -->
+            <div class="image-hover-container card">  
+              <img src="assets/images/ourServices/Component2.png" alt="Image 2" class="img-fluid">
+              <div class="image-hover-text p-5 text-center rounded">
+                <p>Opt for our Full Truck Load (FTL) or dedicated vehicle services, meticulously tailored to align with your business requirements. This customizable option enhances your logistical operations by providing swift and personalized delivery services, ensuring optimal efficiency.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-12 mb-4"> <!-- Adjust the column size based on your design -->
+        <div class="row">
+          <div class="col-12"> <!-- Column containing the card -->
+            <div class="image-hover-container card"> 
+              <img src="assets/images/ourServices/Component3.png" alt="Image 3" class="img-fluid">
+              <div class="image-hover-text p-5 text-center rounded">
+                <p>Rely on our expertise in providing tailor-made warehouse solutions precisely crafted to meet your unique specifications. Our strategically located warehouses are designed to seamlessly accommodate your needs, enhancing your logistical efficiency and operational flexibility.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
