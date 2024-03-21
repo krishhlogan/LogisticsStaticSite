@@ -135,6 +135,42 @@
   opacity: 1; /* Text becomes visible on hover */
 }
 
+@media (min-width: 576px) {
+      .custom-margin {
+        margin-left: -75px !important;
+        /* margin-right: -75px !important; */
+      }
+      .our-reach-heading {
+        color: #F6E5CC;
+        font-size: 28px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 700
+      }
+      .our-reach-body {
+        color: #F6E5CC;
+        font-size: 18px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 300
+      }
+    }
+@media (max-width: 576px) {
+      .custom-margin {
+        margin-left: -70px !important;
+        margin-right: -70px !important;
+      }
+      .our-reach-heading {
+        color: #F6E5CC;
+        font-size: 28px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 700
+      }
+      .our-reach-body {
+        color: #F6E5CC;
+        font-size: 18px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 300
+      }
+}
 
   </style>
 </head>
@@ -327,7 +363,7 @@
     <img src="assets/images/whyUs/LS-underline-primary.png" alt="Why Choose Us Image" style="width:300px; height: auto;">
     <p class="mt-2 mt-md-4 text-body1" style="font-size: 16px;font-weight: 400;">Lorem ipsum dolor sit amet consectetur. At parturient urna mattis cras pellentesque viverra accumsan convallis feugiat. Malesuada massa donec dignissim sed amet. Sed vestibulum ut elementum lorem faucibus porttitor amet aliquam felis. In pulvinar urna faucibus habitant nunc diam vitae platea gravida. </p>
 
-    <div class="row justify-content-center p-0 p-md-5 p-lg-5">  
+    <div class="row justify-content-center p-0 p-md-4 p-lg-5">  
       <div class="col-12 col-md-12 mb-4"> <!-- Adjust the column size based on your design -->
         <div class="row">
           <div class="col-12"> <!-- Column containing the card -->
@@ -360,7 +396,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-12 mb-4"> <!-- Adjust the column size based on your design -->
+      <div class="col-12 col-md-12"> <!-- Adjust the column size based on your design -->
         <div class="row">
           <div class="col-12"> <!-- Column containing the card -->
             <div class="image-hover-container card"> 
@@ -376,6 +412,42 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- Our Reach -->
+<div class="container-fluid p-3 p-md-4 mt-1">
+  <div class="row p-5">
+    <div class="col-md-6"> <!-- Left column -->
+      <div class="row mb-4"> <!-- First row in left column -->
+        <div class="col-md-12">
+          <h2 class="text-body1 justify-content-start p-0" style="font-size: 46px;">Our Reach</h2>
+          <img src="assets/images/whyUs/LS-underline-primary.png" alt="Why Choose Us Image" style="width:300px; height: auto;">
+        </div>
+      </div>
+      <div class="row mb-4 mx-0 pl-0 custom-margin" style="background-color: #87121C; color: white;"> <!-- Second row in left column -->
+        <div class="col-12 col-md-12 text-center p-3">
+          <img src="assets/icons/outReach/ourReach-LS-1.png" alt="Icon 1" class="mb-3" style="width: 80px;">
+          <h3 class="our-reach-heading">18.5k</h3>
+          <p class="our-reach-body">Postal Codes</p>
+          <hr class = "mx-5" style="border: 2px solid #410000;">
+        </div>
+        <div class="col-12 col-md-12 text-center">
+          <img src="assets/icons/outReach/ourReach-LS-2.png" alt="Icon 2" class="mb-3" style="width: 80px;">
+          <h3 class="our-reach-heading">Tier 3/4</h3>
+          <p class="our-reach-body">Major Delights Are From</p>
+          <hr class = "mx-5" style="border: 2px solid #410000;">
+        </div>
+        <div class="col-12 col-md-12 text-center">
+          <img src="assets/icons/outReach/ourReach-LS-3.png" alt="Icon 3" class="mb-3" style="width: 80px;">
+          <h3 class="our-reach-heading">2.8 Days</h3>
+          <p class="our-reach-body">SLA</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 d-flex justify-content-center align-items-center p-3 p-md-5"> <!-- Right column -->
+          <img src="assets/images/ourReach/Our-reach-LS.png" class="img-fluid">
     </div>
   </div>
 </div>
