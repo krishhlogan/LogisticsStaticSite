@@ -29,11 +29,8 @@
     }
     </script>
   <style>
-    header {
-    background-color: #FFF5E2;
-  }
   .navbar-color {
-    background-color: #FFF5E2;
+    background-color: #202323;
   }
 
   .logo {
@@ -42,7 +39,7 @@
     margin-left: 24px;
   }
   .text-body1 {
-    color: #410000;
+    color: #E7E6E6;
     font-size: 24px;
     font-family: 'Inter', sans-serif;
     font-weight: 500
@@ -57,7 +54,7 @@
     margin-right: 30px; /* Adjust spacing as needed */
   }
   .navbar-toggler-icon {
-    color: #87121C;
+    color: #E7E6E6;
   }
   .card-text {
     overflow: hidden;
@@ -66,8 +63,8 @@
   .lh-2 {
     line-height: 2;
   }
-    .our-value-title {
-    color: #410000;
+  .our-value-title {
+    color: #0067EA;
     font-size: 24px;
     font-family: 'Noto Serif', serif;
     font-weight: 800;
@@ -78,22 +75,25 @@
     font-family: 'Inter', sans-serif;
   }
  .carousel-indicators li {
-  background-color: #410000;
+  background-color: #0067EA;
   opacity: 0.5;
-}
+  }
 .carousel-indicators .active {
-  background-color: #87121C;
-} 
+  background-color: #0067EA;
+  } 
  .carousel-item .card-body{
-  background-color: #FFE5E7;
+  background-color: #E7E6E6;
   flex: 1;
+ }
+ .carousel-item .card-title{
+  font-weight:600;
  }
  .inactive-carousal {
   background-color: #FFE5E7;
   opacity: 0.5;
  }
  .carousel-indicators [data-bs-target]:not(.active) {
-  background-color: #FFC2C7;
+  background-color: #0067EA;
 }
 .arrow-button {
   cursor: pointer; 
@@ -103,7 +103,7 @@
   font-weight: bold; 
   font-size: 2.5rem;
   cursor: pointer;
-  color: #87121C;
+  color: #0067EA;
 } 
 .image-hover-container {
   position: relative; /* Enables positioning of hover text */
@@ -119,8 +119,8 @@
   width: 100%;
   height: 100%;
   /* background-color: rgba(0, 0, 0, 1); Semi-transparent black background */
-  background-color: #87121CFF;
-  color: #FFEECC; /* White text color */
+  background-color: #0067EA;
+  color: #E7E6E6; /* White text color */
   opacity: 0; /* Initially hidden */
   transition: opacity 0.3s ease-in-out; /* Smooth transition on hover */
   display: flex; /* Center text vertically and horizontally */
@@ -141,16 +141,47 @@
         /* margin-right: -75px !important; */
       }
       .our-reach-heading {
-        color: #F6E5CC;
-        font-size: 28px;
+        color: #0067EA;
+        font-size: 24px;
         font-family: 'Inter', sans-serif;
         font-weight: 700
       }
       .our-reach-body {
-        color: #F6E5CC;
-        font-size: 18px;
+        color: #202323;
+        font-size: 16px;
         font-family: 'Inter', sans-serif;
-        font-weight: 300
+        font-weight: 600
+      }
+      .top-header-head {
+        color: #E7E6E6;
+        font-size: 55px;
+      }
+      .top-header-body {
+        color: #0067EA;
+        font-weight: 400;
+        font-family:'Inter', sans-serif;
+        font-size: 16px
+      }
+      .our-value-bg-image {
+        background-image: url('assets/bgImages/ourValues/bg.png');
+        background-size: 100% 100%;
+        background-position: center;
+        /* padding: 0; */
+      }
+      .whyUs-bg-image {
+        background-image: url('assets/bgImages/whyChooseUs/bgLS.png');
+        background-size: 100% 100%;
+        background-position: center;
+      }
+      .ourServices-bg-image{
+        background-image: url('assets/images/ourServices/bgOurServices.png');
+        background-size: 100% 100%;
+        background-position: center;
+      }
+      .ourReach-bg-image{
+        background-image: url('assets/images/ourReach/bgOurReach.png');
+        background-size: 100% 100%;
+        background-position: center;
       }
     }
 @media (max-width: 576px) {
@@ -170,22 +201,73 @@
         font-family: 'Inter', sans-serif;
         font-weight: 300
       }
+      .top-header-head {
+        color: #E7E6E6;
+      }
+      .top-header-body {
+        color: #0067EA;
+        font-weight: 400;
+        font-family:'Inter', sans-serif;
+        font-size: 16px
+      }
+      .our-value-bg-image {
+        background-image: url('assets/bgImages/ourValues/bg.png');
+        background-size: 100% 100%;
+        background-position: center;
+      }
+      .whyUs-bg-image {
+        background-image: url('assets/bgImages/whyChooseUs/bgLS.png');
+        background-size: 100% 100%;
+        background-position: center;
+      }
+      .ourServices-bg-image{
+        background-image: url('assets/images/ourServices/bgOurServices.png');
+        background-size: 100% 100%;
+        background-position: center;
+      }
+      .ourReach-bg-image{
+        background-image: url('assets/images/ourReach/bgOurReach.png');
+        background-size: 100% 100%;
+        background-position: center;
+      }
 }
-.form-control {
-    border: none;
-    border-bottom: 1px solid #ccc; /* Specify the color of the bottom border */
-    border-radius: 0; /* Remove any border-radius */
-    outline: none; /* Remove the outline when input is focused */
-    margin-bottom: 25px;
-  }
+#leftImage {
+  height: 60%;
+    width: auto;
+    max-width: 100%;
+}
+.custom-textbox {
+      border: none;
+      border-radius: 0;
+      background-color: transparent; /* Transparent background */
+      border-bottom: 1px solid #ced4da; /* Bottom border */
+      outline: none; /* Remove outline */
+      box-shadow: none; /* Remove box shadow */
+      transition: border-color 0.3s; /* Add transition for smooth effect */
+    }
+
+    /* Add border bottom on focus */
+.custom-textbox:disabled {
+      background-color: #0067EA; /* Light grey background color for disabled input */
+      border-color: transparent; /* No border for disabled input */
+      border-bottom: 1px solid #ced4da; /* Bottom border */
+    }
+.custom-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px; 
+}
+.custom-textbox::placeholder {
+  color: #E7E6E6; /* Change the color to your desired color */
+}
   </style>
 </head>
-<body>
+<body style="background-color: #202323;">
   <!--  Nav bar -->
   <nav class="navbar navbar-expand-lg navbar-color">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="assets/icons/logo.png" alt="Your Company Logo" class="logo">
+        <img src="assets/icons/agrarian-logo.png" alt="Your Company Logo" class="logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon">
@@ -210,51 +292,27 @@
       </div>
     </div>
   </nav>
-
-  <div class="card bg-dark text-white">
-    <img src="assets/icons/home_img.png" alt="Large Screen Image" class="img-fluid d-none d-lg-block">
-    <img src="assets/icons/home_img.png" alt="Medium Screen Image" class="img-fluid d-none d-md-block d-lg-none">
-    <img src="assets/icons/Hero-bg-MS.png" alt="Small Screen Image" class="img-fluid d-md-none">
-
-    <!-- Small screen View -->
-    <div class="card-img-overlay px-3 py-3 m-3 pt-5 d-block d-sm-none">
-      <h5 class="card-title text-body2 pb-2" style="color: #FFFCFC">Empowering Rural India via Tailored Supply Chain Solutions</h5>
-      <p class="card-text fs-md-4 pb-3" style="color: #FFF5E2;font-weight: 400;font-family:'Inter', sans-serif;font-size: 16px">With over 20 years in the supply chain industry, our team brings expertise in transportation, warehousing, and supply chain management.</p>
-      <p class="card-text fs-md-4 pb-3" style="color: #FFF5E2;font-weight: 400;font-family:'Inter', sans-serif;font-size: 16px">Join our waitlist now for an exclusive preview of our upcoming app!</p>
-      <button class="btn btn-primary rounded-pill px-4" style="background-color: #FFEECC;color:#87121C">Get App</button>
-      <button class="btn btn-primary rounded-pill px-4" style="background-color: #87121C;color:#FFEECC;border: 3px solid #FFEECC;">Contact Us</button>
+  <div class="container-fluid">
+    <div class="row">
+    <div class="col-12 col-md-7">
+      <h5 class="card-title text-body2 pb-3 top-header-head mx-4">Empowering Rural India via Tailored Supply Chain Solutions</h5>
+          <p class="card-text pb-3 mx-4" style="color: #0067EA;font-weight: 400;font-family:'Inter', sans-serif;font-size: 16px">With over 20 years in the supply chain industry, our team brings expertise in transportation, warehousing, and supply chain management.</p>
+          <button class="btn btn-primary rounded-pill px-4 mx-4" style="background-color: #0067EA;color:#202323">Get App</button>
+          <button class="btn btn-primary rounded-pill ml-4" style="background-color: #202323;color:#E7E6E6;border: 3px solid #FFEECC;">Contact Us</button>
+          <p class="card-text pt-5 mx-4" style="color: #0067EA;font-weight: 400;font-family:'Inter', sans-serif;font-size: 16px">Join our waitlist now for an exclusive preview of our upcoming app!</p>
     </div>
-
-  <!-- medium screen view -->
-  <div class="card-img-overlay px-3 py-3 m-3 pt-5 d-none d-md-block d-lg-none">
-    <h5 class="card-title text-body2 pb-2" style="color: #FFFCFC">Empowering Rural India via Tailored Supply Chain Solutions</h5>
-    <p class="card-text fs-md-4 pb-3" style="color: #FFF5E2;font-weight: 400;font-family:'Inter', sans-serif;font-size: 16px">With over 20 years in the supply chain industry, our team brings expertise in transportation, warehousing, and supply chain management.</p>
-    <p class="card-text fs-md-4 pb-3" style="color: #FFF5E2;font-weight: 400;font-family:'Inter', sans-serif;font-size: 16px">Join our waitlist now for an exclusive preview of our upcoming app!</p>
-    <button class="btn btn-primary rounded-pill px-4" style="background-color: #FFEECC;color:#87121C">Get App</button>
-    <button class="btn btn-primary rounded-pill px-4" style="background-color: #87121C;color:#FFEECC;border: 3px solid #FFEECC;">Contact Us</button>
-  </div>
-
-  <!-- large screen view -->
-  <div class="card-img-overlay px-3 py-3 m-3 pt-5 d-none d-lg-block">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-6 py-5">
-          <h5 class="card-title text-body2 pb-3" style="color: #FFFCFC;font-size: 55px;">Empowering Rural India via Tailored Supply Chain Solutions</h5>
-          <p class="card-text pb-3" style="color: #FFF5E2;font-weight: 400;font-family:'Inter', sans-serif;font-size: 16px">With over 20 years in the supply chain industry, our team brings expertise in transportation, warehousing, and supply chain management.</p>
-          <p class="card-text pb-3" style="color: #FFF5E2;font-weight: 400;font-family:'Inter', sans-serif;font-size: 16px">Join our waitlist now for an exclusive preview of our upcoming app!</p>
-          <button class="btn btn-primary rounded-pill" style="background-color: #FFEECC;color:#87121C">Get App</button>
-          <button class="btn btn-primary rounded-pill" style="background-color: #87121C;color:#FFEECC;border: 3px solid #FFEECC;">Contact Us</button>
-        </div>  
-      </div>
+    <div class="col-12 col-md-5">
+      <img src="assets/icons/Mask group.png" alt="Small Screen Image" class="img-fluid">
     </div>
   </div>
   </div>
   
   <!-- Our value section -->
-  <div class="container mt-5">
-    <div class="row">
+  <div class="container-fluid our-value-bg-image">
+  <div class="container-fluid">
+    <div class="row mx-3 mt-2">
       <div class="col-md-4 mb-4">
-        <div class="card h-100 rounded" style="background-color: #FFF5E2;">
+        <div class="card rounded" style="background-color: #E7E6E6;margin-top: 20%;">
           <img src="assets/images/ourValue/Mission-LS.png" class="card-img-top" alt="Card Image">
           <div class="card-body p-3">
             <h5 class="card-title our-value-title pb-3">Our Mission</h5>
@@ -263,16 +321,16 @@
         </div>
       </div>
       <div class="col-md-4 mb-4">
-        <div class="card h-100 rounded" style="background-color: #FFF5E2;">
+        <div class="card rounded" style="background-color: #E7E6E6;margin-top: 20%">
           <img src="assets/images/ourValue/Expertise-LS.png" class="card-img-top" alt="Card Image">
           <div class="card-body p-3">
-            <h5 class="card-title our-value-title pb-3">Our Expertise</h5>
+            <h5 class="card-title our-value-title pb-2">Our Expertise</h5>
             <p class="card-text our-value-card-body">Agrarian embodies the perfect blend of experience, innovation, and an unwavering commitment to excellence, all geared towards revolutionizing the logistics industry. Leverage our extensive expertise and years of dedicated service to gain a competitive advantage in the domain.</p>
           </div>
         </div>
       </div>
       <div class="col-md-4 mb-4">
-        <div class="card h-100 rounded" style="background-color: #FFF5E2;">
+        <div class="card rounded" style="background-color: #E7E6E6;margin-top: 20%;">
           <img src="assets/images/ourValue/Technology-LS.png" class="card-img-top" alt="Card Image">
           <div class="card-body  p-3">
             <h5 class="card-title our-value-title pb-3">Our Technology</h5>
@@ -282,15 +340,17 @@
       </div>
     </div>
   </div>
+  </div>
 
   <!-- Why choose us -->
-  <div class="container-fluid p-5" style="background-color: #F6E5CC;">
+  <div class="container-fluid whyUs-bg-image my-5">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-12 col-md-12 col-lg-3 d-flex flex-column justify-content-top p-5">
-        <h2 class="text-body1 justify-content-start p-0" style="font-size: 46px;">Why Choose Us</h2>
-        <img src="assets/images/whyUs/LS-underline-primary.png" alt="Why Choose Us Image" style="width: 100%; height: auto;">
+        <h2 class="text-body1 justify-content-start p-0 mt-5" style="font-size: 46px;">Why Choose Us</h2>
+        <img src="assets/bgImages/whyChooseUs/Underline.png" alt="Why Choose Us Image" style="width: 100%; height: auto;">
       </div>
-      <div class="col-12 col-md-12 col-lg-4">
+      <div class="col-12 col-md-12 col-lg-4 my-5">
         <div class="row">
           <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -347,7 +407,7 @@
         </div>
         </div>
       </div>
-      <div class="col-5 d-none d-md-none d-lg-block">
+      <div class="col-5 d-none d-md-none d-lg-block my-5">
         <div class="row">
         <div class="card h-60 w-50 mx-auto rounded inactive-carousal mt-5" style="height: 400px;"> 
           <img id ='nextImg' src="assets/images/carousal/MaskGroup-0.png" class="card-img-top carousel-img d-block w-100">
@@ -361,14 +421,14 @@
       </div>
     </div>
   </div>
+</div>
 
 <!-- Our services -->
+<div class="container-fluid ourServices-bg-image my-5">
 <div class="container-fluid p-3 p-md-5">
   <div class="col-12 col-md-12">
     <h2 class="text-body1 justify-content-start p-0" style="font-size: 46px;">Our Services</h2>
-    <img src="assets/images/whyUs/LS-underline-primary.png" alt="Why Choose Us Image" style="width:300px; height: auto;">
-    <p class="mt-2 mt-md-4 text-body1" style="font-size: 16px;font-weight: 400;">Lorem ipsum dolor sit amet consectetur. At parturient urna mattis cras pellentesque viverra accumsan convallis feugiat. Malesuada massa donec dignissim sed amet. Sed vestibulum ut elementum lorem faucibus porttitor amet aliquam felis. In pulvinar urna faucibus habitant nunc diam vitae platea gravida. </p>
-
+    <img src="assets/bgImages/whyChooseUs/Underline.png" alt="Why Choose Us Image" style="width:300px; height: auto;">
     <div class="row justify-content-center p-0 p-md-4 p-lg-5">  
       <div class="col-12 col-md-12 mb-4"> <!-- Adjust the column size based on your design -->
         <div class="row">
@@ -380,7 +440,7 @@
                 <p class="d-block d-sm-none mt-3" style="font-size: 12px;">We extend Door-to-Door (D2D) services with scheduled delivery options spanning all geographical regions, ensuring your parcels are conveniently delivered to your doorstep. Our D2D service offers a cost-effective logistics model complemented by comprehensive end-to-end tracking mechanisms, ensuring peace of mind for you.</p>
                 <p class="d-none d-sm-block d-md-none" style="font-size: 14px;">We extend Door-to-Door (D2D) services with scheduled delivery options spanning all geographical regions, ensuring your parcels are conveniently delivered to your doorstep. Our D2D service offers a cost-effective logistics model complemented by comprehensive end-to-end tracking mechanisms, ensuring peace of mind for you.</p>
                 <p class="d-none d-md-block d-lg-none" style="font-size: 16px;">We extend Door-to-Door (D2D) services with scheduled delivery options spanning all geographical regions, ensuring your parcels are conveniently delivered to your doorstep. Our D2D service offers a cost-effective logistics model complemented by comprehensive end-to-end tracking mechanisms, ensuring peace of mind for you.</p>
-                <p class="d-none d-lg-block" style="font-size: 18px;">We extend Door-to-Door (D2D) services with scheduled delivery options spanning all geographical regions, ensuring your parcels are conveniently delivered to your doorstep. Our D2D service offers a cost-effective logistics model complemented by comprehensive end-to-end tracking mechanisms, ensuring peace of mind for you.</p>
+                <p class="d-none d-lg-block" style="font-size: 28px;">We extend Door-to-Door (D2D) services with scheduled delivery options spanning all geographical regions, ensuring your parcels are conveniently delivered to your doorstep. Our D2D service offers a cost-effective logistics model complemented by comprehensive end-to-end tracking mechanisms, ensuring peace of mind for you.</p>
               </div>
             </div>
           </div>
@@ -396,7 +456,7 @@
                 <p class="d-block d-sm-none mt-3" style="font-size: 12px;">Opt for our Full Truck Load (FTL) or dedicated vehicle services, meticulously tailored to align with your business requirements. This customizable option enhances your logistical operations by providing swift and personalized delivery services, ensuring optimal efficiency.</p>
                 <p class="d-none d-sm-block d-md-none" style="font-size: 14px;">Opt for our Full Truck Load (FTL) or dedicated vehicle services, meticulously tailored to align with your business requirements. This customizable option enhances your logistical operations by providing swift and personalized delivery services, ensuring optimal efficiency.</p>
                 <p class="d-none d-md-block d-lg-none" style="font-size: 16px;">Opt for our Full Truck Load (FTL) or dedicated vehicle services, meticulously tailored to align with your business requirements. This customizable option enhances your logistical operations by providing swift and personalized delivery services, ensuring optimal efficiency.</p>
-                <p class="d-none d-lg-block" style="font-size: 18px;">Opt for our Full Truck Load (FTL) or dedicated vehicle services, meticulously tailored to align with your business requirements. This customizable option enhances your logistical operations by providing swift and personalized delivery services, ensuring optimal efficiency.</p>
+                <p class="d-none d-lg-block" style="font-size: 28px;">Opt for our Full Truck Load (FTL) or dedicated vehicle services, meticulously tailored to align with your business requirements. This customizable option enhances your logistical operations by providing swift and personalized delivery services, ensuring optimal efficiency.</p>
               </div>
             </div>
           </div>
@@ -412,7 +472,7 @@
                 <p class="d-block d-sm-none mt-3" style="font-size: 12px;">Rely on our expertise in providing tailor-made warehouse solutions precisely crafted to meet your unique specifications. Our strategically located warehouses are designed to seamlessly accommodate your needs, enhancing your logistical efficiency and operational flexibility.</p>
                 <p class="d-none d-sm-block d-md-none" style="font-size: 14px;">Rely on our expertise in providing tailor-made warehouse solutions precisely crafted to meet your unique specifications. Our strategically located warehouses are designed to seamlessly accommodate your needs, enhancing your logistical efficiency and operational flexibility.</p>
                 <p class="d-none d-md-block d-lg-none" style="font-size: 16px;">Rely on our expertise in providing tailor-made warehouse solutions precisely crafted to meet your unique specifications. Our strategically located warehouses are designed to seamlessly accommodate your needs, enhancing your logistical efficiency and operational flexibility.</p>
-                <p class="d-none d-lg-block" style="font-size: 18px;">Rely on our expertise in providing tailor-made warehouse solutions precisely crafted to meet your unique specifications. Our strategically located warehouses are designed to seamlessly accommodate your needs, enhancing your logistical efficiency and operational flexibility.</p>
+                <p class="d-none d-lg-block" style="font-size: 28px;">Rely on our expertise in providing tailor-made warehouse solutions precisely crafted to meet your unique specifications. Our strategically located warehouses are designed to seamlessly accommodate your needs, enhancing your logistical efficiency and operational flexibility.</p>
               </div>
             </div>
           </div>
@@ -421,29 +481,31 @@
     </div>
   </div>
 </div>
+</div>
 
 <!-- Our Reach -->
+<div class="container-fluid ourReach-bg-image">
 <div class="container-fluid p-3 p-md-4 mt-1">
   <div class="row p-5">
     <div class="col-md-6"> <!-- Left column -->
       <div class="row mb-4"> <!-- First row in left column -->
         <div class="col-md-12">
           <h2 class="text-body1 justify-content-start p-0" style="font-size: 46px;">Our Reach</h2>
-          <img src="assets/images/whyUs/LS-underline-primary.png" alt="Why Choose Us Image" style="width:300px; height: auto;">
+          <img src="assets/bgImages/whyChooseUs/Underline.png" alt="Why Choose Us Image" style="width:300px; height: auto;">
         </div>
       </div>
-      <div class="row mb-4 mx-0 pl-0 custom-margin" style="background-color: #87121C; color: white;"> <!-- Second row in left column -->
+      <div class="row mb-4 mx-0 pl-0 custom-margin" style="background-color: #E7E6E6;"> <!-- Second row in left column -->
         <div class="col-12 col-md-12 text-center p-3">
           <img src="assets/icons/outReach/ourReach-LS-1.png" alt="Icon 1" class="mb-3" style="width: 80px;">
           <h3 class="our-reach-heading">18.5k</h3>
           <p class="our-reach-body">Postal Codes</p>
-          <hr class = "mx-5" style="border: 2px solid #410000;">
+          <hr class = "mx-5" style="border: 2px solid #F8F8F8;">
         </div>
         <div class="col-12 col-md-12 text-center">
           <img src="assets/icons/outReach/ourReach-LS-2.png" alt="Icon 2" class="mb-3" style="width: 80px;">
           <h3 class="our-reach-heading">Tier 3/4</h3>
           <p class="our-reach-body">Major Delights Are From</p>
-          <hr class = "mx-5" style="border: 2px solid #410000;">
+          <hr class = "mx-5" style="border: 2px solid #F8F8F8;">
         </div>
         <div class="col-12 col-md-12 text-center">
           <img src="assets/icons/outReach/ourReach-LS-3.png" alt="Icon 3" class="mb-3" style="width: 80px;">
@@ -457,6 +519,7 @@
     </div>
   </div>
 </div>
+</div>
 
 <!-- Our Team -->
 <div class="container-fluid p-0 mt-0">
@@ -464,44 +527,17 @@
   <img src="assets/images/ourTeam/ourTeam-LS.svg" class="img-fluid d-none d-sm-block"> <!-- Display for larger screens -->
 </div>
 
-<!-- Career and Info-->
-<div class="container-fluid p-3 p-md-4 mt-1">
-  <!-- First section -->
-  <div class="row p-5 align-items-center" style="margin-right: -75px;"> 
-    <!-- Left column -->
-    <div class="col-md-6"> 
-      <!-- Work Reach Us -->
-      <h2 class="text-body1 justify-content-start p-0" style="font-size: 46px;">Reach Us</h2>
-      <img src="assets/images/whyUs/LS-underline-primary.png" alt="Why Choose Us Image" style="width:300px; height: auto;">
-      
-      <!-- Form goes here -->
-      <p class="mt-3 mb-5">To apply for a position with us, kindly submit your details and resume below.</p>
+<!-- Info and Reach US-->>
+<div class="container-fluid p-0 mt-4" style="background-color: #E7E6E6;">
+<div class="row">
+  <div class="col-12 col-md-6">
+    <img src="assets/images/info/ReachUS.png" class="img-fluid">
+  </div>
+  <div class="col-12 col-md-6">
+    <div class="container-fluid p-5">
+      <h2 class="text-body2 justify-content-start p-0" style="font-size: 46px;color: #202323;">Reach Us</h2>
+        <img src="assets/bgImages/whyChooseUs/Underline.png" alt="Why Choose Us Image" style="width:300px; height: auto;">
 
-      <form class="pr-5" style="padding-right: 40px;">
-        <div class="form-group">
-          <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
-        </div>
-        <div class="form-group mb-5">
-          <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
-        </div>
-        <div class="form-group mb-5">
-          <textarea class="form-control" id="message" name="message" rows="3" placeholder="Message" required></textarea>
-        </div>
-        <!-- Button wrapped in input-group -->
-        <div class="input-group mb-5">
-          <button type="submit" class="btn btn-primary" style="background-color: #87121C; border-radius: 0;resize: none;">Send</button>
-        </div>
-      </form>
-    </div>
-
-    <!-- Right column -->
-    <div class="col-md-6" style="background-color: #87121C; color: #F6E5CC; margin-right: -50px; padding-right: 50px;"> 
-      <!-- Info -->
-      <div class="container-fluid p-5">
-        <h2 class="text-body2 justify-content-start p-0" style="font-size: 46px;">Info</h2>
-        <img src="assets/images/ourTeam/LS-underline-secondary.png" alt="Why Choose Us Image" style="width:300px; height: auto;">
-      
-        <!-- Info details -->
         <div class="row align-items-center my-4">
           <div class="col-md-12 p-3">
             <div class="d-flex align-items-center">
@@ -522,13 +558,34 @@
             </div>
           </div>
         </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Waitlist -->
+<div class="container-fluid p-0 my-5">
+  <div class="row " style="margin-left: 13%;width: 80%;border-radius: 10px;">
+    <div class="col-12 col-md-7 d-flex justify-content-center align-items-center rounded" style="background-color: #0067EA;border-radius: 30px;">
+      <div class="container p-2">
+        <h3 style="color: #E7E6E6;font-family: 'Noto Serif', serif;font-size: 34px;font-weight: 500;">
+          Exclusive App Priority List
+        </h3>
+        <p style="color: #E7E6E6;font-family: 'Inter', sans-serif;font-size: 14px;">
+          Get ahead of the game with our exclusive app waitlist! Be the first to access our new features and updates. Sign up now and be part of the excitement!
+        </p>
+        <div class="form-group">
+          <!-- Add custom class to input field -->
+          <input type="text" class="form-control custom-textbox p-2 my-3" placeholder="Your Email" disabled>
+          <button type="button" class="btn btn-primary btn-lg btn-block p-2 my-3" style="background-color: #E7E6E6;color:#202323;width: 100%;border-radius: 20px;">Join Waitlist</button>
+        </div>
       </div>
+    </div>
+    <div class="col-12 col-md-5 d-flex align-items-center justify-content-left p-0">
+      <img src="assets/images/waitlist/waitlistFrame.png" class="img-fluid " style="width: 70%;">
     </div>
   </div>
 </div>
 
-
-<!-- Waitlist -->
 
 
 
