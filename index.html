@@ -236,13 +236,30 @@
     width: auto;
     max-width: 100%;
 }
-.form-control {
-    border: none;
-    border-bottom: 1px solid #ccc; /* Specify the color of the bottom border */
-    border-radius: 0; /* Remove any border-radius */
-    outline: none; /* Remove the outline when input is focused */
-    margin-bottom: 25px;
-  }
+.custom-textbox {
+      border: none;
+      border-radius: 0;
+      background-color: transparent; /* Transparent background */
+      border-bottom: 1px solid #ced4da; /* Bottom border */
+      outline: none; /* Remove outline */
+      box-shadow: none; /* Remove box shadow */
+      transition: border-color 0.3s; /* Add transition for smooth effect */
+    }
+
+    /* Add border bottom on focus */
+.custom-textbox:disabled {
+      background-color: #0067EA; /* Light grey background color for disabled input */
+      border-color: transparent; /* No border for disabled input */
+      border-bottom: 1px solid #ced4da; /* Bottom border */
+    }
+.custom-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px; 
+}
+.custom-textbox::placeholder {
+  color: #E7E6E6; /* Change the color to your desired color */
+}
   </style>
 </head>
 <body style="background-color: #202323;">
@@ -546,6 +563,29 @@
 </div>
 </div>
 <!-- Waitlist -->
+<div class="container-fluid p-0 my-5">
+  <div class="row " style="margin-left: 13%;width: 80%;border-radius: 10px;">
+    <div class="col-12 col-md-7 d-flex justify-content-center align-items-center rounded" style="background-color: #0067EA;border-radius: 30px;">
+      <div class="container p-2">
+        <h3 style="color: #E7E6E6;font-family: 'Noto Serif', serif;font-size: 34px;font-weight: 500;">
+          Exclusive App Priority List
+        </h3>
+        <p style="color: #E7E6E6;font-family: 'Inter', sans-serif;font-size: 14px;">
+          Get ahead of the game with our exclusive app waitlist! Be the first to access our new features and updates. Sign up now and be part of the excitement!
+        </p>
+        <div class="form-group">
+          <!-- Add custom class to input field -->
+          <input type="text" class="form-control custom-textbox p-2 my-3" placeholder="Your Email" disabled>
+          <button type="button" class="btn btn-primary btn-lg btn-block p-2 my-3" style="background-color: #E7E6E6;color:#202323;width: 100%;border-radius: 20px;">Join Waitlist</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-5 d-flex align-items-center justify-content-left p-0">
+      <img src="assets/images/waitlist/waitlistFrame.png" class="img-fluid " style="width: 70%;">
+    </div>
+  </div>
+</div>
+
 
 
 
