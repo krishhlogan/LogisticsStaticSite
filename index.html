@@ -11,6 +11,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
   <script>
     function updateBlurredContent(slideIndex) {
@@ -65,7 +67,7 @@
   }
   .our-value-title {
     color: #0067EA;
-    font-size: 20px;
+    font-size: 24px;
     font-family: 'Noto Serif', serif;
     font-weight: 800;
   }
@@ -234,7 +236,7 @@
       }
       .our-value-card-body{
         color: #202323;
-        font-size: 14px;
+        font-size: 18px;
         font-family: 'Inter', sans-serif;
       }
       .main-heading {
@@ -382,15 +384,15 @@
   <nav class="navbar navbar-expand-lg navbar-color fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="assets/icons/agrarian-logo.png" alt="Your Company Logo" class="logo d-none d-md-block">
-        <img src="assets/icons/logo-MS.svg" alt="Your Company Logo" class="logo d-block d-md-none">
+        <img src="assets/icons/agrarian-logo.png" alt="Your Company Logo" class="logo d-none d-md-block w3-animate-zoom	">
+        <img src="assets/icons/logo-MS.svg" alt="Your Company Logo" class="logo d-block d-md-none w3-animate-zoom	">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon">
           <i class="fas fa-bars fa-lg"></i>
         </span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse w3-animate-right" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link text-body1" href="#ourValue">Our Value</a>
@@ -411,7 +413,7 @@
   <!-- Hero Section -->
   <div class="container-fluid">
     <div class="row hero-margin-top">
-    <div class="col-12 col-md-7">
+    <div class="col-12 col-md-7 w3-animate-left">
       <h5 class="card-title text-body2 pb-3 top-header-head" style="margin-left: 10%;margin-top: 10%;">Empowering Rural India via Tailored Supply Chain Solutions</h5>
           <p class="card-text pb-3" style="color: #0067EA;font-weight: 400;font-family:'Inter', sans-serif;font-size: 16px;margin-left: 10%;">With over 20 years in the supply chain industry, our team brings expertise in transportation, warehousing, and supply chain management.</p>
           <button id="get-app-btn" class="btn btn-primary rounded-pill px-4" onclick="scrollToSection('waitlist')">Get App</button>
@@ -419,7 +421,7 @@
           <p class="card-text pt-5" style="color: #0067EA;font-weight: 400;font-family:'Inter', sans-serif;font-size: 16px;margin-left: 10%;">Join our waitlist now for an exclusive preview of our upcoming app!</p>
     </div>
     <div class="col-12 col-md-5 d-none d-md-block">
-      <img src="assets/images/heroSection/Mask group.png" alt="Medium to Larger Screen Image" class="img-fluid">
+      <img src="assets/images/heroSection/Mask group.png" alt="Medium to Larger Screen Image" class="img-fluid w3-animate-right">
     </div>
     <div class="col-12 col-md-5 d-block d-md-none">
       <img src="assets/images/heroSection/MaskGroup-MS.png" alt="Small Screen Image" class="img-fluid">
@@ -436,16 +438,18 @@
           <img src="assets/images/ourValue/Mission-LS.png" class="card-img-top" alt="Card Image">
           <div class="card-body px-4 pt-4" style="padding-bottom: 6%;">
             <h5 class="card-title our-value-title pb-3">Our Mission</h5>
-            <p class="card-text our-value-card-body align-items-center">Our steadfast commitment lies in providing dependable and streamlined logistics solutions, meticulously customized to address the distinct requirements of our esteemed clients. Our overarching goal is to exceed anticipations and nurture enduring partnerships built on trust and excellence.</p>
+            <p class="card-text our-value-card-body align-items-center">We are committed to offering reliable logistics solutions tailored to clients' needs, aiming to exceed expectations and foster enduring partnerships.
+            </p>
           </div>
         </div>
       </div>
       <div class="col-md-4 mb-4">
         <div class="card rounded" style="background-color: #E7E6E6;margin-top: 20%;">
           <img src="assets/images/ourValue/Expertise-LS.png" class="card-img-top" alt="Card Image">
-          <div class="card-body px-4 pt-4" style="padding-bottom: 6%;">
+          <div class="card-body px-4 pt-4" style="padding-bottom: 8%;">
             <h5 class="card-title our-value-title pb-2">Our Expertise</h5>
-            <p class="card-text our-value-card-body" style="font-size: 15px;">We harness cutting-edge technology to enhance operational efficiency and streamline processes. From real-time tracking capabilities to automated inventory management systems, our innovative solutions are tailored to elevate and optimize your logistical operations.</p>
+            <p class="card-text our-value-card-body">With a mix of experience, innovation, and dedication, we're set to redefine logistics. Leverage our knowledge for a competitive edge.
+            </p>
           </div>
         </div>
       </div>
@@ -454,7 +458,9 @@
           <img src="assets/images/ourValue/Technology-LS.png" class="card-img-top" alt="Card Image">
           <div class="card-body  px-4 pt-4" style="padding-bottom: 6%;">
             <h5 class="card-title our-value-title pb-3">Our Technology</h5>
-            <p class="card-text our-value-card-body">We harness cutting-edge technology to enhance operational efficiency and streamline processes. From real-time tracking capabilities to automated inventory management systems, our innovative solutions are tailored to elevate and optimize your logistical operations.</p>
+            <p class="card-text our-value-card-body">
+              Employing cutting-edge tech, we enhance efficiency and streamline processes. Our solutions, from tracking to inventory management, optimize logistics.
+            </p>
           </div>
         </div>
       </div>
@@ -617,19 +623,19 @@
       </div>
       <div class="row mb-4 mx-0 pl-0 custom-margin" style="background-color: #E7E6E6;"> <!-- Second row in left column -->
         <div class="col-12 col-md-12 text-center p-3">
-          <img src="assets/icons/outReach/ourReach-LS-1.png" alt="Icon 1" class="mb-3" style="width: 80px;">
-          <h3 class="our-reach-heading">18.5k</h3>
+          <img src="assets/icons/outReach/ourReach-LS-1.png" alt="Icon 1" class="mb-3 w3-animate-left" style="width: 80px;">
+          <h3 class="our-reach-heading ">18.5k</h3>
           <p class="our-reach-body">Postal Codes</p>
           <hr class = "mx-5" style="border: 2px solid #F8F8F8;">
         </div>
         <div class="col-12 col-md-12 text-center">
-          <img src="assets/icons/outReach/ourReach-LS-2.png" alt="Icon 2" class="mb-3" style="width: 80px;">
+          <img src="assets/icons/outReach/ourReach-LS-2.png" alt="Icon 2" class="mb-3 w3-animate-left" style="width: 80px;">
           <h3 class="our-reach-heading">Tier 3/4</h3>
           <p class="our-reach-body">Major Delights Are From</p>
           <hr class = "mx-5" style="border: 2px solid #F8F8F8;">
         </div>
         <div class="col-12 col-md-12 text-center">
-          <img src="assets/icons/outReach/ourReach-LS-3.png" alt="Icon 3" class="mb-3" style="width: 80px;">
+          <img src="assets/icons/outReach/ourReach-LS-3.png" alt="Icon 3" class="mb-3 w3-animate-left" style="width: 80px;">
           <h3 class="our-reach-heading">2.8 Days</h3>
           <p class="our-reach-body">SLA</p>
         </div>
