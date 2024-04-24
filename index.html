@@ -65,7 +65,7 @@
   }
   .our-value-title {
     color: #0067EA;
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'Noto Serif', serif;
     font-weight: 800;
   }
@@ -149,7 +149,7 @@
   color: #E7E6E6; /* Change the color to your desired color */
 }
 
-@media (min-width: 576px) {
+@media (min-width: 1024px) {
       .custom-margin {
         margin-left: -75px !important;
         /* margin-right: -75px !important; */
@@ -207,7 +207,7 @@
       }
       .our-value-card-body{
         color: #202323;
-        font-size: 19px;
+        font-size: 14px;
         font-family: 'Inter', sans-serif;
       }
       .main-heading {
@@ -218,6 +218,10 @@
         font-size: 24px;
         font-weight: 500;
         font-family: 'Inter', sans-serif;
+      }
+      .inactive-carousal-img-style {
+        width: 292px;
+        margin-left: -11px;
       }
       
     }
@@ -263,6 +267,85 @@
         font-size: 16px;
         font-weight: 600;
         font-family: 'Inter', sans-serif;
+      }
+      .inactive-carousal-img-style {
+        width: 200px;
+        margin-left: -11px;
+      }
+}
+@media (min-width: 577px) and (max-width: 1024px) {
+  .custom-margin {
+        margin-left: -75px !important;
+        /* margin-right: -75px !important; */
+      }
+      .our-reach-heading {
+        color: #0067EA;
+        font-size: 24px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 700
+      }
+      .our-reach-body {
+        color: #202323;
+        font-size: 16px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600
+      }
+      .top-header-head {
+        color: #E7E6E6;
+        font-size: 55px;
+      }
+      .top-header-body {
+        color: #0067EA;
+        font-weight: 400;
+        font-family:'Inter', sans-serif;
+        font-size: 16px
+      }
+      .our-value-bg-image {
+        background-image: url('assets/bgImages/ourValues/bg.png');
+        background-size: 100% 100%;
+        background-position: center;
+        /* padding: 0; */
+      }
+      .whyUs-bg-image {
+        background-image: url('assets/bgImages/whyChooseUs/bgLS.png');
+        background-size: 100% 100%;
+        background-position: center;
+      }
+      .ourServices-bg-image{
+        background-image: url('assets/images/ourServices/bgOurServices.png');
+        background-size: 100% 100%;
+        background-position: center;
+      }
+      .ourReach-bg-image{
+        background-image: url('assets/images/ourReach/bgOurReach.png');
+        background-size: 100% 100%;
+        background-position: center;
+      }
+      .footer-bg-image{
+        background-image: url('assets/images/footer/Footer.png');
+        background-size: 100% 100%;
+        background-position: center;
+      }
+      .hero-margin-top{
+        margin-top: 10%;
+      }
+      .our-value-card-body{
+        color: #202323;
+        font-size: 14px;
+        font-family: 'Inter', sans-serif;
+      }
+      .main-heading {
+        font-size: 36px;
+      }
+      .reach-us {
+        margin-left: 30px;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: 'Inter', sans-serif;
+      }
+      .inactive-carousal-img-style {
+        width: 208px;
+        margin-left: -11px;
       }
 }
   </style>
@@ -418,8 +501,8 @@
       </div>
       <div class="col-5 d-none d-md-none d-lg-block my-5">
         <div class="row">
-        <div class="card h-60 w-50 mx-auto rounded inactive-carousal mt-5" style="height: 400px;"> 
-          <img id ='nextImg' src="assets/images/carousal/MaskGroup-0.png" class="card-img-top carousel-img d-block w-100">
+        <div class="card h-60 w-50 mx-auto inactive-carousal mt-5" style="height: 400px;"> 
+          <img id ='nextImg' src="assets/images/carousal/MaskGroup-0.png" class="card-img-top carousel-img d-block inactive-carousal-img-style" >
           <div class="card-body justify-content-center p-4 text-center" style="overflow: auto;">
             <h5 id='slideHeading' class="card-title"></h5>
             <p id = 'slideContent' class="card-text" style="font-size: 14px;"></p>
@@ -540,11 +623,11 @@
 <div class="container-fluid p-0 mt-4" style="background-color: #E7E6E6;">
 <div class="row">
   <div class="col-12 col-md-6">
-    <img src="assets/images/info/ReachUS.png" class="img-fluid">
+    <img src="assets/images/info/ReachUS.png" class="img-fluid" style="height:auto;">
   </div>
   <div class="col-12 col-md-6">
     <div class="container-fluid p-5">
-      <h2 class="text-body2 justify-content-start p-0 main-heading" style="font-size: 46px;color: #202323;">Reach Us</h2>
+      <h2 class="text-body2 justify-content-start p-0 main-heading" style="color: #202323;">Reach Us</h2>
         <img src="assets/bgImages/whyChooseUs/Underline.png" alt="Why Choose Us Image" style="width:300px; height: auto;">
 
         <div class="row align-items-center my-4">
@@ -571,6 +654,7 @@
   </div>
 </div>
 </div>
+
 <!-- Waitlist -->
 <div class="container-fluid p-0 my-5">
   <div class="row " style="margin-left: 13%;width: 80%;border-radius: 10px;">
