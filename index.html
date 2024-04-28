@@ -283,6 +283,9 @@
       .carousel-item .card-body {
         height: 500px;
       }
+      .waitlist-margin {
+        margin-left: 13%;
+      }
       
     }
 @media (min-width: 1024px) and (max-width: 1900px){
@@ -382,6 +385,9 @@
       .inactive-body{
         font-size: 14px;
       }
+      .waitlist-margin {
+        margin-left: 13%;
+      }
     }
 @media (max-width: 576px) {
       .custom-margin {
@@ -444,6 +450,9 @@
       .waitlist{
         background-color: #0067EA;
         border-radius: 20px 20px 0 0;
+      }
+      .waitlist-margin {
+        margin: 10%;
       }
 }
 @media (min-width: 577px) and (max-width: 1024px) {
@@ -639,10 +648,11 @@
   <div class="container-fluid whyUs-bg-image my-5" id="whyUS">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-12 col-md-12 col-lg-3 d-flex flex-column justify-content-top p-5">
-        <h2 class="text-body1 justify-content-start p-0 mt-5 main-heading">Why Choose Us</h2>
+      <div class="col-12 col-md-12 col-lg-3 d-flex flex-column justify-content-top p-0 p-md-5">
+        <h2 class="text-body1 justify-content-start p-0 mt-5 main-heading d-none d-md-block">Why Choose Us</h2>
+        <h2 class="text-body1 justify-content-start p-0 mt-5 main-heading d-block d-md-none" style="margin-left: 3%;">Why Choose Us</h2>
         <img src="assets/bgImages/whyChooseUs/Underline.png" alt="Why Choose Us Image" style="width: 100%; height: auto;" class="d-none d-md-block">
-        <img src="assets/bgImages/whyChooseUs/UnderLine-MS.png" alt="Why Choose Us Image" style="width: 100%; height: auto;" class="d-block d-md-none">
+        <img src="assets/bgImages/whyChooseUs/UnderLine-MS.png" alt="Why Choose Us Image" style="width: 80%; height: auto;margin-left: 3%;" class="d-block d-md-none">
       </div>
       <div class="col-12 col-md-12 col-lg-4 my-5">
         <div class="row">
@@ -786,9 +796,10 @@
     <div class="col-md-6"> <!-- Left column -->
       <div class="row mb-4"> <!-- First row in left column -->
         <div class="col-md-12">
-          <h2 class="text-body1 justify-content-start p-0 main-heading">Our Reach</h2>
+          <h2 class="text-body1 justify-content-start p-0 main-heading d-none d-md-block">Our Reach</h2>
+          <h2 class="text-body1 justify-content-start p-0 main-heading d-block d-md-none" style="margin-left: -15%;">Our Reach</h2>
           <img src="assets/bgImages/whyChooseUs/Underline.png" alt="Why Choose Us Image" style="width:300px; height: auto;" class="d-none d-md-block">
-          <img src="assets/bgImages/whyChooseUs/UnderLine-MS.png" alt="Why Choose Us Image" style="width: 100%; height: auto;" class="d-block d-md-none">
+          <img src="assets/bgImages/whyChooseUs/UnderLine-MS.png" alt="Why Choose Us Image" style="width: 100%; height: auto;margin-left: -15%" class="d-block d-md-none">
         </div>
       </div>
       <div class="row mb-4 mx-0 pl-0 custom-margin" style="background-color: #E7E6E6;border-radius: 15px;"> <!-- Second row in left column -->
@@ -864,7 +875,7 @@
 
 <!-- Waitlist -->
 <div class="container-fluid p-0 my-5" id="waitlist">
-  <div class="row " style="margin-left: 13%;width: 80%;border-radius: 10px;">
+  <div class="row waitlist-margin" style="width: 80%;border-radius: 10px;">
     <div class="col-12 col-md-7 d-flex justify-content-center align-items-center waitlist">
       <div class="container p-2">
         <h3 style="color: #E7E6E6;font-family: 'Noto Serif', serif;font-size: 34px;font-weight: 500;">
